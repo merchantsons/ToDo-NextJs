@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.logo {
+  content: url('../../public/private/giaic-logo-gif.gif');
+  display: inline-block;
+  width: 17em;
+  height: auto;
+  max-width: 17%;
+  margin-top: -1vw;
+}
+
+.header{
+  background-color: rgb(68, 16, 16);
+  text-align: center;
+  margin-top: -11vw;  
+  font-size: 2.5vw;
+}
+
+.inputtodo{
+  background: #e00202bd;
+  border-radius: .20vw;
+  width: 70vw;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: .50vw;
+  padding-bottom: .50vw;
+  margin-bottom: .5vw;
+}
+
+.button{
+  background: #023d0a;
+  border-radius: .40vw;
+  width: 70vw;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: .50vw;
+  padding-bottom: .50vw;
+}
+
+.printtodo{  
+  font-size: 1em;
+  padding-top: .4vw;
+  padding-bottom: .4vw;
+  width: 65vw;
+}
+
+.deletebutton{
+  font-size: .8em;
+  background-color: rgb(68, 16, 16);
+  color: white;
+  border-radius: .5em;
+}
+
+.chkbox{
+  size: 1vw;
+}
+
+.footer{
+  /* margin-top: 38.9vw; */
+  background-color: rgb(68, 16, 16);
+  width: 100%;  
+  font-size: .7em;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  margin-left: -2vw;
+
+  ;
+}
+
+
+.logopaused {
+  content: url('../../public/private/GIAIC-SOURCE.png');
+  width: 3vw;
+  height: auto;
+  margin-left: 34vw;
+}
+
+.project{
+  content: url('../../public/private/PROJECT\ INFO.png');
+  width: 25em;
+  height: auto;
+  max-width: 75%;
+  /* margin-left: -78vw;   */
+  margin-top: 40rem;
+}
